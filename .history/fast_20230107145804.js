@@ -28,7 +28,7 @@
 // console.log(m4+m5)
 
 // var m4=40;
-// var m5=60;
+// var m5=60;     
 // console.log(m4-m5)
 
 // var m4=40;
@@ -553,10 +553,11 @@
 //   return A*A;
 //  });
 
+ ;
 // var mm =foods.map(All);
 // console.log(mm);
-// console.log(All)
-// console.log("<==3===========>")
+console.log(All)
+console.log("<==3===========>")
 
 // let arr_square= number.map(function(c){
 //   return c*c;
@@ -584,53 +585,16 @@
 // };
 // foods.forEach(mm2)
 
+
 //math object
 
-// math Object
 
-// let val;
-// val =Math.PI;
-// val = Math.E;
-// val = Math.round(1.7);
-// val=Math.ceil(1.1)
-// val=Math.floor(1.1)
-// val=Math.sqrt(81);
-// val=Math.abs(-4);
-// val=Math.pow(4,5);
-// val=Math.max(1,2,3,4,5);
-// val=Math.min(1,2,3,4,5);
-// val=Math.floor(Math.random()*100+1);
+let Valu;
 
-// console.log(val)
+Valu=math.PI;
 
-//Date object
 
-let val;
+console.log(Valu)
 
-var today = new Date();
-let birthday = new Date("02-02-2004  01:06:33");
-let birthday2 = new Date("03/02/2004  01:06:33");
 
-// val=today.toString();
-val = birthday;
-val = birthday2;
-val = today.getDate();
-val = today.getDay();
-val = today.getMonth();
-val = today.getFullYear();
-val = today.getHours();
-val = today.getMinutes();
-// val=today.getSeconds();
-// val=today.getMilliseconds();
-val = today.getTime();
-// val=today.getTimezoneOffset();
-// val=today.getUTCDate();
-// val=today.getUTCDay();
-// val=today.getUTCMonth();
-// val=today.getUTCFullYear();
-
-// console.log(val)
-
-birthday.setMonth(1);
-console.log(birthday);
 

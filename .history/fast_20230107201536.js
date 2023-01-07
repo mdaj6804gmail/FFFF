@@ -633,4 +633,4 @@ val = today.getTime();
 
 birthday.setMonth(1);
 console.log(birthday);
-
+var today=new Date
