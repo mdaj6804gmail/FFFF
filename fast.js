@@ -631,6 +631,144 @@ val = today.getTime();
 
 // console.log(val)
 
-birthday.setMonth(1);
-console.log(birthday);
+// birthday.setMonth(1);
+// console.log(birthday);
+
+// Class (ES6) Constructor
+/*
+class person {
+  constructor(A, B, C, D, birthday) {
+    this.name = A;
+    this.vill = B;
+    this.FName = C;
+    this.MName = D;
+    this.age = birthday;
+  }
+  calculateAge() {
+    let birthday = new Date(this.age);
+    let diff = Date.now() - birthday.getTime();
+    let ageDate = new Date(diff);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
+}
+let person1 = new person(
+  "All Mubin",
+  "Rowshongiripara",
+  "Shohidul islam",
+  "Momotaj Katun",
+  "02-02-2004"
+);
+let person2 = new person(
+  "Kalid hasan",
+  "Rowshongiripara",
+  "Shohidul islam",
+  "Momotaj Katun",
+  "02-02-2014"
+);
+let person3 = new person(
+  "Hadi",
+  "Rowshongiripara",
+  "Ziaur",
+  "Arifa",
+  "02-02-2015"
+);
+let person4 = new person(
+  "Amena",
+  "Rowshongiripara",
+  "Nasir",
+  "Rima",
+  "02-02-2016"
+);
+
+// console.log(person1/*.calculateAge()*/ // console.log(person2/*.calculateAge()*/);
+// console.log(person3/*calculateAge()*/);
+// console.log(person4/*.calculateAge()*/)
+
+//Inheritance HistoryName
+
+// class person {
+//   //Bass class
+//   constructor(F, L) {
+//     this.fname = F;
+//     this.lname = L;
+//   }
+//   greeting() {
+//     return ` Hello  ${this.fname} ${this.lname}`;
+//   }
+// }
+// // let person1 =new person(
+// //     "All",
+// //     "Mubin"
+// // );
+// // console.log(person1.greeting());
+
+// class customer extends person {
+//   //Sub class
+//   constructor(F, L, P, M) {
+//     super(F, L);
+//     this.phone = P;
+//     this.memberShip = M;
+//   }
+// }
+
+// let person3 = new customer("Rashed", "Alli", "017667389", "78689876");
+
+// console.log(person3);
+// console.log(person3.greeting());
+// console.log("<=====================>")
+
+// //Basic class or
+// // Bass class
+
+// class Mubin{
+//   constructor(F,L){
+//     this.fname=F;
+//     this.lname=L;
+
+//   };
+//   greeting(){
+//     return `${this.fname} ${this.lname}`;
+//   };
+//   static fast(){
+//     return `Hello`
+//   }
+// };
+// let person1 = new Mubin(
+//   "All",
+//   "Mubin"
+// );
+
+// // Sub class
+// class jkl extends person{
+//   constructor(F,L,E,D){
+// super(F,L);
+// this.Email=E;
+// this.District=D;
+
+//   }
+// };
+// let person6 =new jkl(
+//   `Kalid`,
+//   `Hasan`,
+//   `mdkalid4590@gmail.com`,
+//   `Rajshahi`
+// )
+
+// let gt = person1.greeting();
+// console.log(person6)
+// console.log(gt);
+// console.log(person1);
+// console.log(Mubin.fast());
+
+
+
+
+
+
+
+
+
+
+
+
 
