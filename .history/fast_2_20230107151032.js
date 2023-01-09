@@ -1,4 +1,0 @@
-// math Object
-
-
-let val

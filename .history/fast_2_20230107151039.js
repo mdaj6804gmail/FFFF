@@ -1,7 +1,0 @@
-// math Object
-
-
-let val;
-
-
-
