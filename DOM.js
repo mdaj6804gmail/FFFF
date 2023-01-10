@@ -85,32 +85,85 @@
 // let text = document.querySelector("#note");
 // text.innerHTML +='<h1>Hello All Mubin </h1>'.toLocaleLowerCase();
 
-
 //====JavaScript DocumentFragment//===
-
 
 //JavaScript DocumentFragment class 11 //==
 
+// let menu = document.querySelector("#menu");
+
+// let items = ["Python", "JavaScript", "PHP", "Html", "C", "C++", "R"];
+// let fragment = new DocumentFragment();
+// items.forEach((item) => {
+//   let li = document.createElement("li");
+//   li.innerHTML = item;
+//   fragment.appendChild(li);
+// });
+// menu.appendChild(fragment);
+
+// console.log(" complete  Task!");
+
+// //====JavaScript DocumentFragment  End//===
+
+// let li = document.createElement("li");
+// li.innerHTML = "CSS";
+// menu.insertBefore(li, menu.firstElementChild);
+
+// let li2 = document.createElement("li");
+// li2.innerHTML += "JAVA".toLowerCase();
+// menu.insertBefore(li2, menu.lastElementChild);
+
+// let li3 = document.createElement("li");
+// li3.innerHTML = "Pyscript";
+// menu.after(li3);
+
+// //============ Append prepend========================
+
+// let menu2 = document.querySelector("#menu2");
+// let li4 = ["All", "Mubin", "Rafi"];
+
+// let ul2 = li4.map((li4) => {
+//   let li = document.createElement("li");
+//   li.textContent = li4;
+//   return li;
+// });
+// menu.append(...ul2);
+
+// let li5 = ["Theme Develop", "App Develop", " Web Develop", "Go"];
+
+// let ul3 = li5.map((li5) => {
+//   let li = document.createElement("li");
+//   li.innerHTML = li5;
+//   return li;
+// });
+
+// menu.prepend(...ul3);
+
+// //JavaScript insertAdjacentHTML
+
+// menu.insertAdjacentHTML("afterbegin", "afterbegin");
+// menu.insertAdjacentHTML("beforebegin", "beforebegin");
+// menu.insertAdjacentHTML("afterend", "afterend");
+// menu.insertAdjacentHTML("beforeend", "beforeend");
+
+let menu_2 = document.querySelector("#Menu_2");
+
+let li6 = document.createElement("li");
+li6.textContent = "Home";
+
+menu_2.replaceChild(li6, menu_2.firstElementChild);
+
+let li7 = document.createElement("li");
+li7.textContent = "About Us";
+menu_2.replaceChild(li7, menu_2.lastElementChild);
+
+// menu_2.removeChild(menu_2.lastElementChild);
+
+let clonedMenu=menu_2.cloneNode(true);
+
+clonedMenu.id='clonedId';
+document.body.appendChild(clonedMenu);
 
 
-
-
-
-let pog=['python', 'JavaScript', 'Php', 'Java','C++','R']
-
-let menu=document.getElementById("menu");
-
- let fragment=new DocumentFragment();
-
-pog.forEach((item)=>{
-    let li=document.createElement("li");
-li.innerHTML=item;
-fragment.appendChild(li);
-});
-
-menu.appendChild(fragment);
-
-console.log(menu)
-
-
-
+let clonedMenu2=menu_2.cloneNode(true);
+clonedMenu2.id='clonedId2';
+document.body.appendChild(clonedMenu2);
